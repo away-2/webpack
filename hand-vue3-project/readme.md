@@ -32,6 +32,34 @@
 - webpack  配置
     - 最基本的就是entry output 的概念
 
+- loader 的重要概念
+    - 在 webpack  entry  到  output  中间
+        module  匹配每个规则
+        再使用相应的loader 去处理的过程 
+
+- webpack-dev-server
+    为了性能， 把代码放在内存中
+
+- hash? 
+    根据文件内容进行计算  得到一个唯一值  留下打包历史
+    为了防止浏览器的缓存  CleanWebpackPlugin  清空一下
+
+- --mode=
+    development   开发阶段
+    production    上线    代码压缩？   http   传输  越小越好
+
+- vite  完胜 webpack
+    更快 启动快  重新编译快  
+    vite   使用了GO（rust）  代替node  编译
+    webpack  生态更加成熟  
+
+- babel  是什么？
+    JS 的编译器  正因为babel， es6+ 可以大胆使用
+    @babel/core    babel 的核心库
+    @babel/cli      命令行
+    @babel/preset-env       预处理方式  preset   env  按照你的当前环境来编译
+    
+
 
     
 
